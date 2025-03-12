@@ -49,9 +49,57 @@ You can modify the `WinP.ps1` script to add more programs or adjust installation
 ## License
 This project is licensed under the MIT License.
 
+
+
+
 ## Contributions
 Contributions are welcome! Feel free to submit a pull request or report issues.
 
-## Contact
-For questions or support, open an issue on the repository or reach out via email.
+
+
+
+# How to Enable Script Execution in PowerShell to Run The Script
+
+PowerShell has security measures in place that prevent the execution of scripts by default. To run this script, you need to modify the Execution Policy.
+
+---
+## Step 1: Open PowerShell as Administrator
+1. Press `Win + S` and type **PowerShell**.
+2. Right-click on **Windows PowerShell** and select **Run as administrator**.
+3. A PowerShell window will open with elevated privileges.
+
+---
+## Step 2: Enable Script Execution
+Run the following command to allow scripts to run:
+```powershell
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+When prompted, type `Y` and press **Enter** to confirm the change.
+
+---
+## Step 3: Run the Script
+Navigate to the directory where your script is located using:
+```powershell
+cd "C:\path\to\your\script"
+```
+Then, execute your script with:
+```powershell
+.\your-script.ps1
+```
+
+---
+## Step 4: Restore the Default Execution Policy (Optional)
+For security reasons, you may want to restore the default Execution Policy after running your script:
+```powershell
+Set-ExecutionPolicy Restricted -Scope CurrentUser
+```
+
+---
+## Troubleshooting
+- If you receive a **“Permission denied”** error, ensure you are running PowerShell as an administrator.
+- If the script was downloaded from the internet, unblock it by right-clicking the file, selecting **Properties**, and checking **Unblock** under Security.
+
+By following these steps, you will be able to run the script without restrictions. 🚀
+
+
 
