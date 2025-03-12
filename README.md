@@ -14,12 +14,12 @@ WinP is a lightweight PowerShell-based tool that simplifies the installation of 
 - PowerShell (Admin Mode)
 
 ## Installation
-1. Download the `WinP.ps1` script from the repository.
+1. Download the `start.ps1` script from the repository.
 2. Open PowerShell as Administrator.
-3. Navigate to the directory where `WinP.ps1` is located.
+3. Navigate to the directory where `start.ps1` is located.
 4. Run the script using:
    ```powershell
-   Set-ExecutionPolicy Bypass -Scope Process -Force; .\WinP.ps1
+   Set-ExecutionPolicy Bypass -Scope Process -Force; .\start.ps1
    ```
 
 ## Usage
